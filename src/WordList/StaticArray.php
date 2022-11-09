@@ -25,6 +25,6 @@ class StaticArray implements WordListInterface
         $length = count(static::$words);
         $position = $random * ($length - 1);
 
-        return static::$words[$position];
+        return static::$words[(int) $position];
     }
 }
