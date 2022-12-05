@@ -21,8 +21,22 @@ Via Composer
 
 ``` json
 {
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "barzo/password-generator",
+                "version": "master",
+                "source": {
+                    "url": "https://github.com/whiteua/password-generator.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],    
     "require": {
-        "barzo/password-generator": "~0.4"
+        "barzo/password-generator": "dev-master"
     }
 }
 ```
